@@ -7,7 +7,12 @@ function ageInDays() {
 
     var newH1 = document.createElement('h1');
     var textResult = document.createTextNode('You\'re ' + ageInDays + ' age in days')
+    newH1.setAttribute('id', 'ageInDays');
     newH1.appendChild(textResult);
     document.getElementById('flex-col-result').appendChild(newH1);
 
+}
+
+function reset() {
+    document.getElementById('ageInDays').remove()
 }
